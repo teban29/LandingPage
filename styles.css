@@ -4,13 +4,13 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #ffff;
     line-height: 1.6;
 }
 
 /* Header y Navbar */
 .header {
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 15px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -74,7 +74,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #fc6afd;
+    color: #3dbebb;
 }
 
 /* Hero Section */
@@ -98,7 +98,7 @@ body {
 }
 
 .cta-button {
-    background-color: #fc6afd;
+    background-color: #3dbebb;
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
@@ -108,7 +108,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #952699;
+    background-color: #1d9c99;
 }
 
 /* Servicios */
@@ -130,7 +130,7 @@ body {
 }
 
 .service-item {
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -195,7 +195,7 @@ body {
 }
 
 .form-button {
-    background-color: #fc6afd;
+    background-color: #3dbebb;
     color: #fff;
     padding: 15px;
     border: none;
@@ -206,7 +206,7 @@ body {
 }
 
 .form-button:hover {
-    background-color: #952699;
+    background-color: #1d9c99;
 }
 
 /* Footer */
@@ -279,4 +279,30 @@ body {
     font-size: 1.1em;
     text-align: center;
     color: green; /* Color por defecto */
+}
+
+/* Estilos para el botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Color de WhatsApp */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e; /* Color de WhatsApp más oscuro al pasar el mouse */
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse */
 }
