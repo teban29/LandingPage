@@ -143,9 +143,20 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.service-image {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 250px; /* Aumentamos la altura para que las imágenes se vean más grandes */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 10px; /* Bordes redondeados en la parte superior */
+    margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para efectos hover */
+}
+
+
+.service-item:hover .service-image {
+    transform: scale(1.05); /* Escala ligeramente la imagen al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
 }
 
 .service-title {
@@ -264,6 +275,10 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .service-image {
+        height: 180px; /* Reducir la altura en móviles, pero un poco más grande que antes */
     }
 }
 
